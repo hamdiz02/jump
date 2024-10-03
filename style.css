@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}*
+body{
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    align-items: center;
+}
+.cont{
+    position: fixed;
+    align-items: center;
+    height: 70%;
+    width: 84%;
+    left: 8%;
+    top: 12%;
+    border-radius: 5px;
+    border: solid rgb(54, 97, 54) 2px;
+    background-color: rgb(216, 223, 223);
+}
+video{
+    min-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.dino{
+    position: absolute;
+    width: 5%;
+    height: 25%; 
+    bottom: 0%;
+    left: 10%;
+    background-image: url('yas.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    transition:0.4s;
+}
+.btnj {
+    position: absolute;
+    background-color:transparent;
+    color: rgb(216, 223, 223);
+    border-radius: 5px;
+    border: solid rgb(216, 223, 223) 2px;
+    bottom: 5%;
+    left: 40%;
+    width: 20%;
+    height: 8%;
+    font-size: 150%;
+}
+.btnj:hover{
+    background-color: rgb(216, 223, 223);
+    color: rgb(30, 30, 30);
+    border-color: rgb(30, 30, 30);
+}
+.score{
+    position: absolute;
+    right: -5%;
+    top: 2%;
+    width: 10%;
+    height: 5%;
+    color: rgb(30, 30, 30);
+    font-size: 140%;
+}
+.btns{
+    position: absolute;
+    top: 50%;
+    height: 6%;
+    width: 10%;
+    left: 45%;
+    background-color: transparent;
+    color: rgb(30, 30, 30);
+    border: solid rgb(30, 30, 30) 2px;
+    border-radius: 5px;
+    font-size: 140%;
+}
+.btns:hover{
+    background-color: rgb(30, 30, 30);
+    color: rgb(216, 223, 223);
+    border-color: rgb(216, 223, 223);
+}
+.obj{
+    position: absolute;
+    width: 4%;
+    height: 30%; 
+    bottom: 0%;
+    left: -15%;
+    background-color:red;
+    border-radius: 5px;
+    
+}
+.cactus{
+    position: absolute;
+    height: 25%; 
+    bottom: 0%;
+    background-image: url("ais.jpg");
+    border-radius: 5px;
+    background-color: green;
+    background-size: cover;
+    background-position: center;
+}
+.cactus1{
+    right: -5%;
+    width: 5%;
+}
+.cactus2{
+    right: -8%;
+    width: 5.5%;
+    background-color: red;
+}
+.msg{
+    position: absolute;
+
+    border-radius: 5px;
+    width: 25%;
+    height: 10%; 
+    bottom: 40%;
+    right: 40%;
+    font-size: 150%;
+    text-align: center;
+    color: rgb(30, 30, 30);
+}
+.msg:hover{
+    cursor: pointer;
+}
+.nav{
+    color: rgb(216, 223, 223);
+    font-size:140%;
+    position: absolute;
+    top: 1%;
+    left:  8%;
+    padding: auto;
+}
+@media screen and (max-height : 500px){
+    .btnj{
+        opacity: 0;
+    }
+    .cont{
+        position: absolute;
+        width: 95%;
+        height: 75%;
+        left: 2.5%;
+        top: 19%;
+        
+    }
+    .score{
+        top: 1.5%;
+        font-size: 120%;
+        height: auto;
+        right: -2%;
+    }
+    .nav{
+        font-size: 100%;
+        left: 4%;
+        top: 1%;
+        height: 19%;
+    }
+    .btns{
+        font-size: 120%;
+        height: auto;
+    }
+    .msg{
+        font-size: 110%;
+        height: auto;
+    }
+}
